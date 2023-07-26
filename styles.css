@@ -16,14 +16,22 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 0.25rem;
     height: 100%;
 
     font-family: Montserrat;
     color: rgb(220, 227, 236);}
 
+.containerText .containerConst{
+    display: flex;
+    gap: 0.5rem;
+}
+
 .containerText h1{
+    display: flex;
     font-weight: 600;
     font-size: 2rem;
+    text-align: center;
 }
 
 .containerText p{
@@ -47,4 +55,35 @@ body{
 
 .containerText .imgCode{
     width: 16rem;
+}
+
+
+@media only screen and (max-width:768px){
+    .containerText h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:585px){
+    .containerText h1{
+        font-size: 1.4rem;
+    }
+    .containerText .containerConst{
+        align-items: center;
+        flex-direction: column;
+        gap: 0rem;
+
+    }
+}
+
+@media only screen and (max-width:425px){
+    .containerText h1{
+        font-size: 1rem;
+    }
+    .containerText .containerConst{
+        align-items: center;
+        flex-direction: column;
+        gap: 0rem;
+
+    }
 }
